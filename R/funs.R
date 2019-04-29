@@ -74,7 +74,7 @@ WPH = function(data, t_LED) {
   nu = data$event
   z = data$arm
   data0 = list(N = N, y = y, nu = nu, z = z)
-  fit = rstan::sampling(Weibull_PH, data = data0, warmup = 500, iter = 1000, chains = 2)
+  fit = rstan::sampling(stanmodels$Weibull_PH, data = data0, warmup = 500, iter = 1000, chains = 2)
   fit_ss = rstan::extract(fit)
   HR = exp(fit_ss$delta)
   led = mapply(LED1, fit_ss$alpha, fit_ss$theta, fit_ss$delta, t = t_LED)
@@ -95,7 +95,7 @@ WNPH = function(data, t_LED) {
   nu = data$event
   z = data$arm
   data0 = list(N = N, y = y, nu = nu, z = z)
-  fit = rstan::sampling(Weibull_NPH, data = data0, warmup = 500, iter = 1000, chains = 2)
+  fit = rstan::sampling(stanmodels$Weibull_NPH, data = data0, warmup = 500, iter = 1000, chains = 2)
   fit_ss = rstan::extract(fit)
   led = mapply(LED, fit_ss$alpha1, fit_ss$alpha2, fit_ss$theta1, fit_ss$theta2, t = t_LED)
   df = data.frame(alpha1 = fit_ss$alpha1, alpha2 = fit_ss$alpha2, theta1 = fit_ss$theta1,
