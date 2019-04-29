@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556558818395.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "63E19D50",
+    "lastKnownWriteTime" : 1556226527,
+    "last_content_update" : 1556226527,
+    "path" : "~/Documents/private/BACTSO/R/plots.R",
+    "project_path" : "R/plots.R",
+    "properties" : {
+        "cursorPosition" : "6,28",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

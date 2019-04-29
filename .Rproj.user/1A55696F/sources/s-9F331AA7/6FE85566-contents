@@ -1,0 +1,111 @@
+M = 10
+
+P_a = c(.35, .4)
+P_b = c(.4, .4)
+p = c(.5, .5, .5, .75, .75, .75, 1, 1, 1)
+pmean = p + c(rep(c(0, .25, -.25), 3))
+
+cases = cbind(rep(P_a, length(p)), expand.grid(P_b, p), rep(pmean, each = length(P_b)))
+names(cases) = c('P_a', 'P_b', 'p', 'pmean')
+
+
+library(parallel)
+sim0 = mcmapply(trial_add_RAR_sim, P_a = cases$P_a, P_b = cases$P_b, p = cases$p, pmean0 = cases$pmean, 
+                MoreArgs = list(PF_var = 1, np = 5, nadapt = 6, M = M, pvar = 0.16), mc.cores = 4)
+
+sim_df = cbind(unlist_df(t(sim0)), mefa:::rep.data.frame(cases, each = M))
+sim_df$model = rep("FA_unbiased", nrow(sim_df))
+sim_df$model[sim_df$p < sim_df$pmean]  = "FA_biased_p"
+sim_df$model[sim_df$p > sim_df$pmean]  = "FA_biased_n"
+fact = paste('P_A', '=', sim_df$P_a, 'P_B', '=', sim_df$P_b)
+sim_df$fact = fact
+sim_df0 = sim_df
+sim_df0$pmean = NULL
+
+# sdf = sim_df %>%
+#   group_by(fact, p, model) %>%
+#   summarise(EFP = mean(FP))
+# plot0 = ggplot(sdf, aes(x = fact, y = EFP, fill = model )) +
+#   geom_bar(stat = "identity", position = position_dodge(), color = 'grey40', width = 0.5) + 
+#   xlab("") + ylab('EPF') + scale_fill_brewer(palette="Set2") + facet_grid(p ~ .)
+
+########################################################
+P_a = c(.35, .4)
+P_b = c(.4, .4)
+p = c(.5, .75, 1)
+
+
+cases = cbind(rep(P_a, length(p)), expand.grid(P_b, p))
+names(cases) = c('P_a', 'P_b', 'p')
+
+library(parallel)
+sim1 = mcmapply(trial_add_full_sim, P_a = cases$P_a, P_b = cases$P_b, p = cases$p,
+                MoreArgs = list(PF_var = 1, np = 5, nadapt = 6, M = M), mc.cores = 4)
+
+sim_df1 = cbind(unlist_df(t(sim1)), mefa:::rep.data.frame(cases, each = M))
+sim_df1$model = "FullA"
+fact = paste('P_A', '=', sim_df1$P_a, 'P_B', '=', sim_df1$P_b)
+sim_df1$fact = fact
+########################################
+P_a = c(.35, .4)
+P_b = c(.4, .4)
+p = c(.5, .75, 1)
+
+cases = cbind(rep(P_a, length(p)), expand.grid(P_b, p))
+names(cases) = c('P_a', 'P_b', 'p')
+
+library(parallel)
+sim2 = mcmapply(trial_std_RAR_sim, P_a = cases$P_a, P_b = cases$P_b, p = cases$p,
+                MoreArgs = list(PF_var = 1, np = 5, nadapt = 6, M = 10), mc.cores = 4)
+
+sim_df2 = cbind(unlist_df(t(sim2)), mefa:::rep.data.frame(cases, each = M))
+sim_df2$model = "Conventional"
+fact = paste('P_A', '=', sim_df2$P_a, 'P_B', '=', sim_df2$P_b)
+sim_df2$fact = fact
+
+sim_df = rbind(sim_df0, sim_df1, sim_df2)
+save(sim_df, file = "revised_results_1.RData")
+load("revised_results_1.RData")
+
+sdf = sim_df %>%
+  group_by(fact, p, model) %>%
+  summarise(EFP = mean(FP), MSE_a = sqrt(mean(MSE_a0)), MSE_b = sqrt(mean(MSE_b0)), MSE_ab = sqrt(mean(MSE_ab0)),
+            bias_a = mean(bias_a), bias_b = mean(bias_b), bias_ab = mean(bias_ab),
+            ESS = mean(RN))
+names(sdf)[names(sdf) == "p"] = "f"
+plot0 = ggplot(sdf, aes(x = fact, y = EFP, fill = model )) +
+  geom_bar(stat = "identity", position = position_dodge(), color = 'grey40', width = 0.5) + 
+  xlab("") + ylab('EPF') + scale_fill_brewer(palette="Set2") + facet_grid(f ~ ., labeller = label_both)
+plot1 = ggplot(sdf, aes(x = fact, y = MSE_a, fill = model )) +
+  geom_bar(stat = "identity", position = position_dodge(), color = 'grey40', width = 0.5) + 
+  xlab("") + ylab('RMSE for A') + scale_fill_brewer(palette="Set2") + facet_grid(f ~ ., labeller = label_both)
+plot2 = ggplot(sdf, aes(x = fact, y = MSE_b, fill = model )) +
+  geom_bar(stat = "identity", position = position_dodge(), color = 'grey40', width = 0.5) + 
+  xlab("") + ylab('RMSE for B') + scale_fill_brewer(palette="Set2") + facet_grid(f ~ ., labeller = label_both)
+plot3 = ggplot(sdf, aes(x = fact, y = MSE_ab, fill = model )) +
+  geom_bar(stat = "identity", position = position_dodge(), color = 'grey40', width = 0.5) + 
+  xlab("") + ylab('RMSE for A&B') + scale_fill_brewer(palette="Set2") + facet_grid(f ~ ., labeller = label_both)
+plot4 = ggplot(sdf, aes(x = fact, y = bias_a, fill = model )) +
+  geom_bar(stat = "identity", position = position_dodge(), color = 'grey40', width = 0.5) + 
+  xlab("") + ylab('bias_A') + scale_fill_brewer(palette="Set2") + facet_grid(f ~ ., labeller = label_both)
+plot5 = ggplot(sdf, aes(x = fact, y = bias_b, fill = model )) +
+  geom_bar(stat = "identity", position = position_dodge(), color = 'grey40', width = 0.5) + 
+  xlab("") + ylab('bias_B') + scale_fill_brewer(palette="Set2") + facet_grid(f ~ ., labeller = label_both)
+plot6 = ggplot(sdf, aes(x = fact, y = bias_ab, fill = model )) +
+  geom_bar(stat = "identity", position = position_dodge(), color = 'grey40', width = 0.5) + 
+  xlab("") + ylab('bias_AB') + scale_fill_brewer(palette="Set2") + facet_grid(f ~ ., labeller = label_both)
+plot7 = ggplot(sdf, aes(x = fact, y = ESS, fill = model )) +
+  geom_bar(stat = "identity", position = position_dodge(), color = 'grey40', width = 0.5) + 
+  xlab("") + ylab('Expected sample size') + scale_fill_brewer(palette="Set2") + facet_grid(f ~ ., labeller = label_both)
+
+##################################
+load("revised_results.RData")
+sim_df$IF = NA
+sim_df$IF = sim_df$nb/5
+names(sim_df)[names(sim_df) == "p"] = 'f'
+
+p0 = ggplot(sim_df, aes(x = IF, color = model )) +
+  stat_ecdf(geom = 'line') + facet_grid(f ~ fact, labeller = labeller(f = label_both, fact = label_value)) + 
+  scale_color_brewer(palette = 'Set2') + ylab("probability of trial termination for efficacy")
+
+

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556561864556.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9BEE5387",
+    "lastKnownWriteTime" : 1556561725,
+    "last_content_update" : 1556561725,
+    "path" : "~/Documents/private/BACTSO/src/Modules.cpp",
+    "project_path" : "src/Modules.cpp",
+    "properties" : {
+        "cursorPosition" : "11,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

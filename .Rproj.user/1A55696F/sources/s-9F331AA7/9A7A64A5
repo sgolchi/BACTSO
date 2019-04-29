@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1505851038287.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9A7A64A5",
+    "lastKnownWriteTime" : 1556561336,
+    "last_content_update" : 1556561336034,
+    "path" : "~/Documents/private/BACTSO/R/funs.R",
+    "project_path" : "R/funs.R",
+    "properties" : {
+        "cursorPosition" : "120,16",
+        "scrollLine" : "104"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1506547400051.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "564938478",
+    "id" : "228DE3E5",
+    "lastKnownWriteTime" : 1496694110,
+    "last_content_update" : 1496694110,
+    "path" : "~/Dropbox/clinical_trials/additivity_paper/RAR_exe_plotting01.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556562670422.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2460322183",
+    "id" : "FAB4CC29",
+    "lastKnownWriteTime" : 1556562349,
+    "last_content_update" : 1556562349,
+    "path" : "~/Documents/private/BACTSO/man/sim_data.Rd",
+    "project_path" : "man/sim_data.Rd",
+    "properties" : {
+    },
+    "read_only" : true,
+    "read_only_alternatives" : [
+        "R/funs.R"
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_doc"
+}
