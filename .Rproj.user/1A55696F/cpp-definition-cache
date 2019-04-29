@@ -3,625 +3,265 @@
         "definitions" : [
         ],
         "file" : "/Users/sgolchi/Documents/private/BACTSO/src/Modules.cpp",
-        "file_last_write" : 1506542455.000000
+        "file_last_write" : 1556561725.000000
     },
     {
         "definitions" : [
             {
-                "column" : 48,
+                "column" : 26,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 21,
-                "name" : "vector_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_RAR_sample_prior_namespace@T@vector_d"
-            },
-            {
-                "column" : 48,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 22,
-                "name" : "row_vector_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_RAR_sample_prior_namespace@T@row_vector_d"
-            },
-            {
-                "column" : 61,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
+                "kind" : 6,
                 "line" : 23,
-                "name" : "matrix_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_RAR_sample_prior_namespace@T@matrix_d"
-            },
-            {
-                "column" : 26,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 27,
                 "name" : "prog_reader__",
                 "parent_name" : "",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@F@prog_reader__#"
+                "usr" : "c:@N@model_Weibull_NPH_namespace@F@prog_reader__#"
             },
             {
                 "column" : 7,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 2,
-                "line" : 34,
-                "name" : "model_RAR_sample_prior",
+                "line" : 30,
+                "name" : "model_Weibull_NPH",
                 "parent_name" : "",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior"
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 54,
+                "line" : 50,
                 "name" : "ctor_body(int &, unsigned int, std::ostream *)",
-                "parent_name" : "model_RAR_sample_prior",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@F@ctor_body#&I#i#*I#"
+                "parent_name" : "model_Weibull_NPH",
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@F@ctor_body#&I#i#*I#"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 130,
+                "line" : 142,
                 "name" : "transform_inits(const int &, int &, int &, std::ostream *)",
-                "parent_name" : "model_RAR_sample_prior",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@F@transform_inits#&1I#&I#S1_#*I#1"
+                "parent_name" : "model_Weibull_NPH",
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@F@transform_inits#&1I#&I#S1_#*I#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 175,
+                "line" : 208,
                 "name" : "transform_inits(const int &, int &, std::ostream *)",
-                "parent_name" : "model_RAR_sample_prior",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@F@transform_inits#&1I#&I#*I#1"
+                "parent_name" : "model_Weibull_NPH",
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@F@transform_inits#&1I#&I#*I#1"
             },
             {
                 "column" : 9,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 6,
-                "line" : 188,
+                "line" : 221,
                 "name" : "log_prob(int &, int &, std::ostream *)",
                 "parent_name" : "",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@FT@>3#Nb#Nb#Tlog_prob#&I#S0_#*I#t0.2#1"
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@FT@>3#Nb#Nb#Tlog_prob#&I#S0_#*I#t0.2#1"
             },
             {
                 "column" : 8,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 6,
-                "line" : 262,
+                "line" : 317,
                 "name" : "log_prob(int &, std::ostream *)",
                 "parent_name" : "",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@FT@>3#Nb#Nb#Tlog_prob#&I#*I#t0.2#1"
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@FT@>3#Nb#Nb#Tlog_prob#&I#*I#t0.2#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 273,
+                "line" : 328,
                 "name" : "get_param_names(int &)",
-                "parent_name" : "model_RAR_sample_prior",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@F@get_param_names#&I#1"
+                "parent_name" : "model_Weibull_NPH",
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@F@get_param_names#&I#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 287,
+                "line" : 337,
                 "name" : "get_dims(int &)",
-                "parent_name" : "model_RAR_sample_prior",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@F@get_dims#&I#1"
+                "parent_name" : "model_Weibull_NPH",
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@F@get_dims#&I#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 6,
-                "line" : 312,
+                "line" : 351,
                 "name" : "write_array(RNG &, int &, int &, int &, bool, bool, std::ostream *)",
                 "parent_name" : "",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@FT@>1#Twrite_array#&t0.0#&I#S2_#S2_#b#b#*I#v#1"
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@FT@>1#Twrite_array#&t0.0#&I#S2_#S2_#b#b#*I#v#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 6,
-                "line" : 421,
+                "line" : 407,
                 "name" : "write_array(RNG &, int &, int &, bool, bool, std::ostream *)",
                 "parent_name" : "",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@FT@>1#Twrite_array#&t0.0#&I#S2_#b#b#*I#v#1"
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@FT@>1#Twrite_array#&t0.0#&I#S2_#b#b#*I#v#1"
             },
             {
                 "column" : 24,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 438,
+                "line" : 424,
                 "name" : "model_name",
-                "parent_name" : "model_RAR_sample_prior",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@F@model_name#S"
+                "parent_name" : "model_Weibull_NPH",
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@F@model_name#S"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 443,
+                "line" : 429,
                 "name" : "constrained_param_names(int &, bool, bool)",
-                "parent_name" : "model_RAR_sample_prior",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@F@constrained_param_names#&I#b#b#1"
+                "parent_name" : "model_Weibull_NPH",
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@F@constrained_param_names#&I#b#b#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 483,
+                "line" : 456,
                 "name" : "unconstrained_param_names(int &, bool, bool)",
-                "parent_name" : "model_RAR_sample_prior",
-                "usr" : "c:@N@model_RAR_sample_prior_namespace@S@model_RAR_sample_prior@F@unconstrained_param_names#&I#b#b#1"
-            },
-            {
-                "column" : 48,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 544,
-                "name" : "vector_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_logistic_add_rar_namespace@T@vector_d"
-            },
-            {
-                "column" : 48,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 545,
-                "name" : "row_vector_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_logistic_add_rar_namespace@T@row_vector_d"
-            },
-            {
-                "column" : 61,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 546,
-                "name" : "matrix_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_logistic_add_rar_namespace@T@matrix_d"
+                "parent_name" : "model_Weibull_NPH",
+                "usr" : "c:@N@model_Weibull_NPH_namespace@S@model_Weibull_NPH@F@unconstrained_param_names#&I#b#b#1"
             },
             {
                 "column" : 26,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 6,
-                "line" : 550,
+                "line" : 506,
                 "name" : "prog_reader__",
                 "parent_name" : "",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@F@prog_reader__#"
+                "usr" : "c:@N@model_Weibull_PH_namespace@F@prog_reader__#"
             },
             {
                 "column" : 7,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 2,
-                "line" : 557,
-                "name" : "model_logistic_add_rar",
+                "line" : 513,
+                "name" : "model_Weibull_PH",
                 "parent_name" : "",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar"
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 582,
+                "line" : 533,
                 "name" : "ctor_body(int &, unsigned int, std::ostream *)",
-                "parent_name" : "model_logistic_add_rar",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@F@ctor_body#&I#i#*I#"
+                "parent_name" : "model_Weibull_PH",
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@F@ctor_body#&I#i#*I#"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 707,
+                "line" : 624,
                 "name" : "transform_inits(const int &, int &, int &, std::ostream *)",
-                "parent_name" : "model_logistic_add_rar",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@F@transform_inits#&1I#&I#S1_#*I#1"
+                "parent_name" : "model_Weibull_PH",
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@F@transform_inits#&1I#&I#S1_#*I#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 752,
+                "line" : 677,
                 "name" : "transform_inits(const int &, int &, std::ostream *)",
-                "parent_name" : "model_logistic_add_rar",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@F@transform_inits#&1I#&I#*I#1"
+                "parent_name" : "model_Weibull_PH",
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@F@transform_inits#&1I#&I#*I#1"
             },
             {
                 "column" : 9,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 6,
-                "line" : 765,
+                "line" : 690,
                 "name" : "log_prob(int &, int &, std::ostream *)",
                 "parent_name" : "",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@FT@>3#Nb#Nb#Tlog_prob#&I#S0_#*I#t0.2#1"
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@FT@>3#Nb#Nb#Tlog_prob#&I#S0_#*I#t0.2#1"
             },
             {
                 "column" : 8,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 6,
-                "line" : 849,
+                "line" : 779,
                 "name" : "log_prob(int &, std::ostream *)",
                 "parent_name" : "",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@FT@>3#Nb#Nb#Tlog_prob#&I#*I#t0.2#1"
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@FT@>3#Nb#Nb#Tlog_prob#&I#*I#t0.2#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 860,
+                "line" : 790,
                 "name" : "get_param_names(int &)",
-                "parent_name" : "model_logistic_add_rar",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@F@get_param_names#&I#1"
+                "parent_name" : "model_Weibull_PH",
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@F@get_param_names#&I#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 874,
+                "line" : 799,
                 "name" : "get_dims(int &)",
-                "parent_name" : "model_logistic_add_rar",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@F@get_dims#&I#1"
+                "parent_name" : "model_Weibull_PH",
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@F@get_dims#&I#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 6,
-                "line" : 899,
+                "line" : 814,
                 "name" : "write_array(RNG &, int &, int &, int &, bool, bool, std::ostream *)",
                 "parent_name" : "",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@FT@>1#Twrite_array#&t0.0#&I#S2_#S2_#b#b#*I#v#1"
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@FT@>1#Twrite_array#&t0.0#&I#S2_#S2_#b#b#*I#v#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 6,
-                "line" : 1008,
+                "line" : 881,
                 "name" : "write_array(RNG &, int &, int &, bool, bool, std::ostream *)",
                 "parent_name" : "",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@FT@>1#Twrite_array#&t0.0#&I#S2_#b#b#*I#v#1"
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@FT@>1#Twrite_array#&t0.0#&I#S2_#b#b#*I#v#1"
             },
             {
                 "column" : 24,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 1025,
+                "line" : 898,
                 "name" : "model_name",
-                "parent_name" : "model_logistic_add_rar",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@F@model_name#S"
+                "parent_name" : "model_Weibull_PH",
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@F@model_name#S"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 1030,
+                "line" : 903,
                 "name" : "constrained_param_names(int &, bool, bool)",
-                "parent_name" : "model_logistic_add_rar",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@F@constrained_param_names#&I#b#b#1"
+                "parent_name" : "model_Weibull_PH",
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@F@constrained_param_names#&I#b#b#1"
             },
             {
                 "column" : 10,
                 "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
                 "kind" : 7,
-                "line" : 1070,
+                "line" : 932,
                 "name" : "unconstrained_param_names(int &, bool, bool)",
-                "parent_name" : "model_logistic_add_rar",
-                "usr" : "c:@N@model_logistic_add_rar_namespace@S@model_logistic_add_rar@F@unconstrained_param_names#&I#b#b#1"
-            },
-            {
-                "column" : 48,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 1131,
-                "name" : "vector_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_logistic_full_add_namespace@T@vector_d"
-            },
-            {
-                "column" : 48,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 1132,
-                "name" : "row_vector_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_logistic_full_add_namespace@T@row_vector_d"
-            },
-            {
-                "column" : 61,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 1133,
-                "name" : "matrix_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_logistic_full_add_namespace@T@matrix_d"
-            },
-            {
-                "column" : 26,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 1137,
-                "name" : "prog_reader__",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_full_add_namespace@F@prog_reader__#"
-            },
-            {
-                "column" : 7,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 2,
-                "line" : 1144,
-                "name" : "model_logistic_full_add",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1167,
-                "name" : "ctor_body(int &, unsigned int, std::ostream *)",
-                "parent_name" : "model_logistic_full_add",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@F@ctor_body#&I#i#*I#"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1281,
-                "name" : "transform_inits(const int &, int &, int &, std::ostream *)",
-                "parent_name" : "model_logistic_full_add",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@F@transform_inits#&1I#&I#S1_#*I#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1312,
-                "name" : "transform_inits(const int &, int &, std::ostream *)",
-                "parent_name" : "model_logistic_full_add",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@F@transform_inits#&1I#&I#*I#1"
-            },
-            {
-                "column" : 9,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 1325,
-                "name" : "log_prob(int &, int &, std::ostream *)",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@FT@>3#Nb#Nb#Tlog_prob#&I#S0_#*I#t0.2#1"
-            },
-            {
-                "column" : 8,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 1401,
-                "name" : "log_prob(int &, std::ostream *)",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@FT@>3#Nb#Nb#Tlog_prob#&I#*I#t0.2#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1412,
-                "name" : "get_param_names(int &)",
-                "parent_name" : "model_logistic_full_add",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@F@get_param_names#&I#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1425,
-                "name" : "get_dims(int &)",
-                "parent_name" : "model_logistic_full_add",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@F@get_dims#&I#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 1448,
-                "name" : "write_array(RNG &, int &, int &, int &, bool, bool, std::ostream *)",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@FT@>1#Twrite_array#&t0.0#&I#S2_#S2_#b#b#*I#v#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 1555,
-                "name" : "write_array(RNG &, int &, int &, bool, bool, std::ostream *)",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@FT@>1#Twrite_array#&t0.0#&I#S2_#b#b#*I#v#1"
-            },
-            {
-                "column" : 24,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1572,
-                "name" : "model_name",
-                "parent_name" : "model_logistic_full_add",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@F@model_name#S"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1577,
-                "name" : "constrained_param_names(int &, bool, bool)",
-                "parent_name" : "model_logistic_full_add",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@F@constrained_param_names#&I#b#b#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1614,
-                "name" : "unconstrained_param_names(int &, bool, bool)",
-                "parent_name" : "model_logistic_full_add",
-                "usr" : "c:@N@model_logistic_full_add_namespace@S@model_logistic_full_add@F@unconstrained_param_names#&I#b#b#1"
-            },
-            {
-                "column" : 48,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 1672,
-                "name" : "vector_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_logistic_rar_namespace@T@vector_d"
-            },
-            {
-                "column" : 48,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 1673,
-                "name" : "row_vector_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_logistic_rar_namespace@T@row_vector_d"
-            },
-            {
-                "column" : 61,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 8,
-                "line" : 1674,
-                "name" : "matrix_d",
-                "parent_name" : "",
-                "usr" : "c:models.hpp@N@model_logistic_rar_namespace@T@matrix_d"
-            },
-            {
-                "column" : 26,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 1678,
-                "name" : "prog_reader__",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_rar_namespace@F@prog_reader__#"
-            },
-            {
-                "column" : 7,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 2,
-                "line" : 1685,
-                "name" : "model_logistic_rar",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1708,
-                "name" : "ctor_body(int &, unsigned int, std::ostream *)",
-                "parent_name" : "model_logistic_rar",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@F@ctor_body#&I#i#*I#"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1822,
-                "name" : "transform_inits(const int &, int &, int &, std::ostream *)",
-                "parent_name" : "model_logistic_rar",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@F@transform_inits#&1I#&I#S1_#*I#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1853,
-                "name" : "transform_inits(const int &, int &, std::ostream *)",
-                "parent_name" : "model_logistic_rar",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@F@transform_inits#&1I#&I#*I#1"
-            },
-            {
-                "column" : 9,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 1866,
-                "name" : "log_prob(int &, int &, std::ostream *)",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@FT@>3#Nb#Nb#Tlog_prob#&I#S0_#*I#t0.2#1"
-            },
-            {
-                "column" : 8,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 1941,
-                "name" : "log_prob(int &, std::ostream *)",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@FT@>3#Nb#Nb#Tlog_prob#&I#*I#t0.2#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1952,
-                "name" : "get_param_names(int &)",
-                "parent_name" : "model_logistic_rar",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@F@get_param_names#&I#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 1964,
-                "name" : "get_dims(int &)",
-                "parent_name" : "model_logistic_rar",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@F@get_dims#&I#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 1985,
-                "name" : "write_array(RNG &, int &, int &, int &, bool, bool, std::ostream *)",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@FT@>1#Twrite_array#&t0.0#&I#S2_#S2_#b#b#*I#v#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 6,
-                "line" : 2085,
-                "name" : "write_array(RNG &, int &, int &, bool, bool, std::ostream *)",
-                "parent_name" : "",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@FT@>1#Twrite_array#&t0.0#&I#S2_#b#b#*I#v#1"
-            },
-            {
-                "column" : 24,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 2102,
-                "name" : "model_name",
-                "parent_name" : "model_logistic_rar",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@F@model_name#S"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 2107,
-                "name" : "constrained_param_names(int &, bool, bool)",
-                "parent_name" : "model_logistic_rar",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@F@constrained_param_names#&I#b#b#1"
-            },
-            {
-                "column" : 10,
-                "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-                "kind" : 7,
-                "line" : 2141,
-                "name" : "unconstrained_param_names(int &, bool, bool)",
-                "parent_name" : "model_logistic_rar",
-                "usr" : "c:@N@model_logistic_rar_namespace@S@model_logistic_rar@F@unconstrained_param_names#&I#b#b#1"
+                "parent_name" : "model_Weibull_PH",
+                "usr" : "c:@N@model_Weibull_PH_namespace@S@model_Weibull_PH@F@unconstrained_param_names#&I#b#b#1"
             }
         ],
         "file" : "/Users/sgolchi/Documents/private/BACTSO/src/include/models.hpp",
-        "file_last_write" : 1506542455.000000
+        "file_last_write" : 1556561725.000000
     },
     {
         "definitions" : [
